@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-login{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+}
+.sidebar-login h1{
+    font-size: 2.2rem;
+    color: #ec1b90;
+}
+.input{
+    padding:10px 10px;
+    font-size:14px;
+    width:100%;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    border: none;
+
+}
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.516);
+}
+.label-input{
+    border-bottom: 1px solid #ec1b90;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+
+}
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.signin-form label p{
+    color: black;
+    margin-bottom: 4px;
+}
+.submit-signin{
+    background-color:#ec1b90 ;
+    outline: none;
+    border: none;
+    max-width: 50px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.signin h3{
+    font-size: 1.2rem;
+    color: white;
+}
+.register-signin{
+    color:#ec1b90 ;
+    outline: none;
+    border: none;
+    max-width: 50px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+.links-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 992px) {
+    .container{    
+       display: flex;  
+       align-items: start;
+       flex-direction: row;
+    }
+    .sidebar-login{
+        height: 100vh;
+        width: auto;
+        min-width: 400px;
+        background-color: #ec1b90;
+        padding-left: 10px;
+        flex: 0;
+    
+    }
+    .content{
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 40px;
+    
+    }
+    .sidebar-login h1{
+        color: white;
+    }
+    .signin{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input{
+        border: none; 
+    }
+    .signin-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .signin-form label p{
+        color: white;
+        margin-bottom: 4px;
+    }
+    .submit-signin{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        max-width: 10px;
+        padding-bottom: 6px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1rem;
+        color: black;
+        position: relative;
+        text-decoration: none;
+    }
+    .signin h3{
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .logo{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .logo img{
+        height: 100px;
+        
+    }
+    .register-signin{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        max-width: 50px;
+        padding-bottom: 6px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+        position: relative;
+        text-decoration: none;
+    }
+    .register-signin::after{
+        content: " ";
+        height: 2px;
+        background-color: white;
+        width: 0%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all;
+        transition: 0.3s ease-in-out;
+
+    }
+    .register-signin:hover::after{
+        width: 100%;
+    }
+    .links-login{
+        justify-content: start;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .label-input{
+        border-bottom: 1px solid white;
+    }
+    .input{
+        color: white;
+    }
+
+}
